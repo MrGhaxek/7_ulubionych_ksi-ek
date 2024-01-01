@@ -1,0 +1,140 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>7 ulubionych książek</title>
+<link rel="stylesheet" href="style.css">
+<script>
+    function rotateLogo() {
+        var logo = document.querySelector('.logo');
+        logo.classList.toggle('rotate');
+    }
+</script>
+</head>
+
+<body>
+<div class="content">
+    <div class="logo" onclick="rotateLogo()">7 ulubionych książek</div>
+
+    <div class="menu1">
+        <a>Zdjęcia książek: </a><br /><br />
+        <a href="src/nie-ma-tego-zlego.jpg" target="ramka">Link 1</a><br /><br />
+        <a href="src/malowany-czlowiek.jpg" target="ramka">Link 2</a><br /><br />
+        <a href="src/przebudzenie-lewiatana.jpg" target="ramka">Link 3</a><br /><br />
+        <a href="src/nasze-imie-legion.jpg" target="ramka">Link 4</a><br /><br />
+        <a href="src/kosiarze.jpg" target="ramka">Link 5</a><br /><br />
+        <a href="src/cyberpunk-2077-bez-przypadku.jpg" target="ramka">Link 6</a><br /><br />
+        <a href="src/zniwiarz.jpg" target="ramka">Link 7</a><br /><br />
+    </div>
+
+    <div class="tresc">
+        <iframe name="ramka" width="100%" height="100%" frameborder="0" src=""></iframe>
+    </div>
+
+    <div class="menu2">
+        <a>Linki do książek: </a><br /><br />
+        <a href="https://www.empik.com/nie-ma-tego-zlego-mortka-marcin,p1336052747,ksiazka-p" target="_blank">Link 1</a><br /><br />
+        <a href="https://www.empik.com/malowany-czlowiek-cykl-demoniczny-tom-1-brett-peter-v,p1355307426,ksiazka-p" target="_blank">Link 2</a><br /><br />
+        <a href="https://www.empik.com/przebudzenie-lewiatana-corey-james-s-a,p1201026381,ebooki-i-mp3-p" target="_blank">Link 3</a><br /><br />
+        <a href="https://www.empik.com/nasze-imie-legion-nasze-imie-bob-taylor-dennis-e,p1240749162,ebooki-i-mp3-p" target="_blank">Link 4</a><br /><br />
+        <a href="https://www.empik.com/kosiarze-zniwa-smierci-tom-1-shusterman-neal,p1362729413,ebooki-i-mp3-p" target="_blank">Link 5</a><br /><br />
+        <a href="https://www.empik.com/cyberpunk-2077-bez-przypadku-kosik-rafal,p1396972579,ksiazka-p?qa=cybe&ac=true" target="_blank">Link 6</a><br /><br />
+        <a href="https://www.empik.com/zniwiarz-tom-1-pusta-noc-hendel-paulina,p1139032999,ksiazka-p?qa=%C5%BCniwiar&ac=true" target="_blank">Link 7</a>
+    </div>
+
+    <div class="ankieta">
+        <h1>Wypełnij formularz</h1>
+        <label for=imie>Podaj imię:</label><input type=text name=imie id=imie maxlength=15 size=10>
+        <br>
+
+        <h2>Płeć</h2>
+        <input type=radio id=kobieta name=plec value=kobieta disabled><label for=kobieta>Kobieta</label>
+        <br>
+        <input type=radio id=mezczyzna name=plec value=mezczyzna checked><label for=mezczyzna>Mężczyzna</label>
+        <br>
+
+        <h2>Która książka cię zainteresowała?</h2>
+        <input type=checkbox id=jeden name=zainteresowania value=jeden>Pierwsza</label>
+        <br>
+        <input type=checkbox id=dwa name=zainteresowania value=dwa>Druga</label>
+        <br>
+        <input type=checkbox id=trzy name=zainteresowania value=trzy>Trzecia</label>
+        <br>
+        <input type=checkbox id=cztery name=zainteresowania value=cztery>Czwarta</label>
+        <br>
+        <input type=checkbox id=piec name=zainteresowania value=piec>Piąta</label>
+        <br>
+        <input type=checkbox id=szesc name=zainteresowania value=szesc>Szósta</label>
+        <br>
+        <input type=checkbox id=siedem name=zainteresowania value=siedem>Siódma</label>
+        <br><br>
+        <input type=submit value=Wyślij>
+    </div>
+
+    <div class="tabela">
+        <table border="5px solid black">
+            <tr>
+                <td></td>
+                <td>Autor książki</td>
+                <td>Tytuł książki</td>
+            </tr>
+            <tr>
+                <td>1. </td>
+                <td>Marcin Mortka</td>
+                <td>Nie ma tego złego</td>
+            </tr>
+            <tr>
+                <td>2. </td>
+                <td>Peter V. Brett</td>
+                <td>Malowany człowiek</td>
+            </tr>
+            <tr>
+                <td>3. </td>
+                <td>James S. A. Corey</td>
+                <td>Przebudzenie lewiatana</td>
+            </tr>
+            <tr>
+                <td>4. </td>
+                <td>Dennis E. Taylor</td>
+                <td>Nasze imię legion, nasze imię Bob</td>
+            </tr>
+            <tr>
+                <td>5. </td>
+                <td>Neal Shusterman</td>
+                <td>Kosiarze</td>
+            </tr>
+            <tr>
+                <td>6. </td>
+                <td>Rafał Kosik</td>
+                <td>Cyberpunk: Bez przypadku</td>
+            </tr>
+            <tr>
+                <td>7. </td>
+                <td>Paulina Hendel</td>
+                <td>Żniwiarz: Pusta noc</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="lista">
+        <a>Lista książek według gatunków: </a>
+        <ul style="list-style: disc;">
+            <li>Fantasy: </li>
+            <ol>
+                <li>Nie ma tego złego</li>
+                <li>Malowany człowiek</li>
+                <li>Żniwiarz: Pusta noc </li>
+            </ol>
+            <li>Science fiction: </li>
+            <ol>
+                <li>Przebudzenie lewiatana</li>
+                <li>Nasze imię legion, nasze imię Bob</li>
+                <li>Kosiarze</li>
+                <li>Cyberpunk: Bez przypadku</li>
+            </ol>
+        </ul>
+    </div>
+
+    <div class="stopka">Szymon Marynowski, 2tc, grupa 2</div>
+</div>
+</body>
+</html>
