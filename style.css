@@ -1,0 +1,93 @@
+.content {
+    margin: 0 auto;
+    width: 100%;
+    background-color:grey;
+}
+
+.logo {
+    width: 100%;
+    height: 15%;
+    background-color: coral;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 500%;
+    cursor: pointer; 
+    transition: transform 0.5s ease; 
+}
+
+.logo.rotate {
+    transform: rotate(360deg);
+}
+
+
+.menu1 {
+    width: 20%;
+    height: 75%;
+    background-color: lightgreen;
+    text-align: center;
+    float: left;
+}
+
+.menu2 {
+    width: 20%;
+    height: 75%;
+    background-color: lightgreen;
+    text-align: center;
+    float: right;
+}
+
+.tresc {
+    width: 60%;
+    height: 75%;
+    background-color: peachpuff;
+    text-align: center;
+    float: left;
+}
+
+.ankieta {
+    width: 89%;
+    height: 40%;
+    background-color: aqua;
+    float: left;
+}
+
+.tabela {
+    width: 11%;
+    height: 40%;
+    background-color: crimson;
+    float: right;
+    text-align: center;
+}
+
+.lista {
+    width: 100%;
+    height: 20%;
+    background-color: dodgerblue;
+    float: left;
+}
+
+.stopka {
+    width: 100%;
+    height: 5%;
+    background-color: plum;
+    text-align: center;
+    clear: both;
+}
+
+
+@media screen and (max-width:1200px) {
+    .menu1 {display: none; }
+    .menu2 {width: 50%; }
+    .tresc {display: none; }
+    .ankieta {display: none; }
+    .tabela {width: 50%; float: left; height: 75%;}
+}
+
+@media screen and (max-width:600px) {
+    .logo {display: none; }
+    .menu1 {display: none; }
+    .menu2 {display: none; }
+    .ankieta {display: none; }
+    .tabela {display: none; }
+}
+
