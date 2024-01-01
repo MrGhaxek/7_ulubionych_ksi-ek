@@ -76,7 +76,6 @@
 
 
 @media screen and (max-width:1200px) {
-    .logo {height: 50%; }
     .menu1 {display: none; }
     .menu2 {width: 50%; }
     .tresc {display: none; }
@@ -85,7 +84,7 @@
 }
 
 @media screen and (max-width:600px) {
-    .logo {height: 50%; }
+    .logo {display: none; }
     .menu1 {display: none; }
     .menu2 {display: none; }
     .ankieta {display: none; }
